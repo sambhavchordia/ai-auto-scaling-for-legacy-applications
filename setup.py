@@ -1,0 +1,51 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="ai-autoscaling-system",
+    version="1.0.0",
+    packages=find_packages(),
+    install_requires=[
+        "fastapi>=0.104.1",
+        "uvicorn[standard]>=0.24.0",
+        "pydantic>=2.5.0",
+        "pandas>=2.1.4",
+        "numpy>=1.24.3",
+        "scikit-learn>=1.3.2",
+        "prophet>=1.1.4",
+        "tensorflow>=2.15.0",
+        "torch>=2.1.2",
+        "transformers>=4.36.2",
+        "joblib>=1.3.2",
+        "python-multipart>=0.0.6",
+        "nest-asyncio>=1.5.8",
+        "pyyaml>=6.0.1",
+        "python-dotenv>=1.0.0",
+    ],
+    extras_require={
+        "dev": [
+            "pytest>=7.4.3",
+            "pytest-asyncio>=0.21.1",
+            "black>=23.11.0",
+            "flake8>=6.1.0",
+            "pre-commit>=3.6.0",
+            "jupyter>=1.0.0",
+        ]
+    },
+    python_requires=">=3.8",
+    author="Your Name",
+    author_email="your.email@example.com",
+    description="AI-Powered Auto-Scaling System with ML and Generative AI",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/yourusername/ai-autoscaling-system",
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+    ],
+)

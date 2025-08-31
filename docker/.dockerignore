@@ -1,0 +1,85 @@
+# Git
+.git
+.gitignore
+README.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Data (exclude large files)
+*.csv
+*.pkl
+*.h5
+*.model
+
+# Environment
+.env
+.env.local
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Temporary files
+tmp/
+temp/
+
+# Documentation
+docs/
+*.md
+
+# Tests
+tests/
+
+# Scripts (keep only necessary ones)
+scripts/train_models.py
+scripts/setup_environment.py
+
+# Development files
+Makefile
+pyproject.toml
+setup.py
+requirements-dev.txt
+.pre-commit-config.yaml

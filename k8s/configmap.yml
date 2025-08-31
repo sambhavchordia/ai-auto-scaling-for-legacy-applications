@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ai-autoscaling-config
+data:
+  API_HOST: "0.0.0.0"
+  API_PORT: "8000"
+  DEBUG: "false"
+  LOG_LEVEL: "INFO"
+  MODEL_PATH: "/app/models/"
+  PRIMARY_MODEL_FILE: "prophet_model.pkl"
+  SECONDARY_MODEL_FILE: "enhanced_secondary_model.pkl"
+  CORS_ORIGINS: '["*"]'
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ai-autoscaling-secret
+type: Opaque
+data:
+  SECRET_KEY: eW91ci1zZWNyZXQta2V5LWhlcmU=  # base64 encoded
